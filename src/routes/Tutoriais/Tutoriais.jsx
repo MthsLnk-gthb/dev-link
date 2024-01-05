@@ -26,8 +26,8 @@ const Cursos = () => {
   const niveis = ["Todos", "Basico", "Intermediario", "Avançado"];
 
   return (
-    <article className="cursos-page">
-      <h1>Cursos TechNexo</h1>
+    <article className="tutoriais-page">
+      <h1 className="nome-pagina">Tutoriais LinkDev</h1>
 
       <section className="filtros-tutoriais">
         <h2>Filtre as opções</h2>
@@ -64,7 +64,7 @@ const Cursos = () => {
             <Link
               to={`/tutoriais/${tutorial.id}`}
               key={tutorial.id}
-              className="nome-do-tutorial"
+              className="caixa-tutorial"
             >
               {tutorial.title}
               <span className="mais-informacoes">
