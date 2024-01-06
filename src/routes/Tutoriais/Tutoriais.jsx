@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { arrayTutoriais } from "./listaDeTutoriais";
 import { useState } from "react";
+import Voltar from "../../Components/Voltar";
 
 const Cursos = () => {
-  const [filtroTopico, setFiltroTopico] = useState("JavaScript");
+  const [filtroTopico, setFiltroTopico] = useState("Todos");
   const [filtroNivel, setFiltroNivel] = useState("Basico");
 
   const handleFiltro = (e) => {
@@ -26,8 +27,11 @@ const Cursos = () => {
   const niveis = ["Todos", "Basico", "Intermediario", "Avançado"];
 
   return (
+    <>
+    
+      <Voltar rotaDestino="/home"/>
+      <h1 className="nome-pagina">Tutoriais DevLink</h1>
     <article className="tutoriais-page">
-      <h1 className="nome-pagina">Tutoriais LinkDev</h1>
 
       <section className="filtros-tutoriais">
         <h2>Filtre as opções</h2>
@@ -79,6 +83,7 @@ const Cursos = () => {
         )}
       </section>
     </article>
+    </>
   );
 };
 

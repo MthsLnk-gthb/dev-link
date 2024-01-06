@@ -1,11 +1,11 @@
 $black: #1b1b1b;
 $white-font: #dfdfe2;
-$pink: #EF2D56;
+$pink: #ef2d56;
 $light-purple: #961ff1;
 $violet: #50028f;
 $purple: #250141;
-$blue: #2C8AC4;
-$dark-blue: #003169;
+$blue: #2c8ac4;
+$dark-blue: #00325a;
 $fluo-blue: #00c8e2;
 
 $bold: 700;
@@ -23,31 +23,41 @@ body {
   display: grid;
   justify-content: center;
   text-align: center;
+  min-height: 100vh;
   //background-image: radial-gradient($violet 25%, $purple);
-  background-image: linear-gradient(to bottom, $dark-blue 55%, $fluo-blue);
+  background-image: linear-gradient(to bottom, $dark-blue 50%, $fluo-blue);
+  background-repeat: repeat-y;
 }
 
-.nome-pagina{
+.nome-pagina {
   color: $white-font;
   text-decoration: underline;
   font-size: 1.8rem;
   margin-top: 5vh;
 }
 
+.link-de-retorno {
+  position: absolute;
+  left: 5vw;
+  color: $pink;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+p{
+  font-size: 1.25rem;
+}
 
 //Referente ao arquivo Home.jsx
 
-.home-page{
+.home-page {
   justify-content: center;
   align-items: center;
 }
 
-
-.article-home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15dvh;
+.article-home {
+  display: grid;
+  place-items: center;
 }
 
 .grid-redes-sociais {
@@ -77,103 +87,124 @@ body {
   }
 }
 
-.texto-da-home{
-    width: 60vw;
-    text-align: justify;
+.textos-de-introducao {
+  width: 65vw;
+  text-align: justify;
 }
 
-.texto-da-home p{
+.textos-de-introducao p {
   color: $white-font;
-  font-size: 1.2rem;
+  margin-top: 10dvh;
 }
 
-
-//Referentes ao Cursos.jsx
-
-.tutoriais-page{
-  margin-top: 25dvh;
+.textos-de-introducao > p:last-child {
 }
 
-.filtros-tutoriais{
+.quem-sou{
+  margin-top: 10vh;
+  text-align: center;
+  width: 70vw;
+}
+
+.quem-sou>h1{
+  font-size: 1.6rem;
+}
+
+.quem-sou>p{
+  font-weight: $medium-bold;
+}
+
+.foto-matheus{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 5vh;
+}
+
+//Referentes ao Tutoriais.jsx
+
+.tutoriais-page {
+  margin-top: 10dvh;
+}
+
+.filtros-tutoriais {
   margin-top: 3vh;
 }
 
-.filtros-tutoriais>h2{
-    color: $light-purple;
+.filtros-tutoriais > h2 {
+  color: $light-purple;
 }
 
-.select-filtros{
-    margin: 2vh 3vw;
-    width: 200px;
-    height: 40px;
-    background-color: $light-purple;
-    font-size: 1.3rem;
-    font-weight: $bold;
-    color: $white-font;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    z-index: 1;
+.select-filtros {
+  margin: 2vh 3vw;
+  width: 200px;
+  height: 40px;
+  background-color: $light-purple;
+  font-size: 1.3rem;
+  font-weight: $bold;
+  color: $white-font;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  z-index: 1;
 
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.lista-de-tutoriais{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 10vh auto;
+.lista-de-tutoriais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10vh auto;
 }
 
-.caixa-tutorial{
-    display: grid;
-    color: $white-font;
-    width: 300px;
-    height: 150px;
-    background-color: $dark-blue;
-    border: 2px solid $blue;
-    margin: 10px ;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    padding: 15px;
-    transition: .3s linear;
+.caixa-tutorial {
+  display: grid;
+  color: $white-font;
+  width: 300px;
+  height: 150px;
+  background-color: $dark-blue;
+  border: 2px solid $blue;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 0.3s linear;
 
-    &:hover{
-      border: 2px solid $fluo-blue;
-    }
+  &:hover {
+    border: 2px solid $fluo-blue;
+  }
 }
 
-.caixa-tutorial>span{
-    font-size: 1.1rem;
-    color: $fluo-blue;
-    text-decoration: underline;
+.caixa-tutorial > span {
+  font-size: 1.1rem;
+  color: $fluo-blue;
+  text-decoration: underline;
 }
 
-.nenhum-tutorial-encontrado{
-    width: 350px;
-    height: 150px;
-    background-image: radial-gradient($light-purple 60%, $pink);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+.nenhum-tutorial-encontrado {
+  width: 350px;
+  height: 150px;
+  background-image: radial-gradient($light-purple 60%, $pink);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
 
-.nenhum-tutorial-encontrado>p{
-    color: $white-font;
-    font-size: 1.3rem;
+.nenhum-tutorial-encontrado > p {
+  color: $white-font;
 }
-
-
 
 //Referente ao arquivo DetalhesCursos.jsx
 
 .box-do-tutorial {
   position: relative;
-  margin: 10vh auto;
+  margin: 15vh auto;
   width: 30vw;
   min-width: 300px;
   height: 55vh;
@@ -205,11 +236,11 @@ body {
   font-size: 1.2rem;
   text-decoration: underline;
   color: $white-font;
-    position: absolute;
-    bottom: 11vh;
-    margin: 0 auto;
-    left: 1%;
-    right: 1%;
+  position: absolute;
+  bottom: 11vh;
+  margin: 0 auto;
+  left: 1%;
+  right: 1%;
 }
 
 .botao-de-matricula {
@@ -236,28 +267,26 @@ body {
   }
 }
 
-
 //Referente ao Componente Navbar.jsx
 
-.header-da-aplicacao{
-    margin-top: 2vh;
+.header-da-aplicacao {
+  margin-top: 2vh;
 }
 
-.barra-de-navegacao{
-
+.barra-de-navegacao {
 }
 
 .link-da-navbar {
-    font-size: 1.4rem;
-    font-weight: $medium-bold;
-    text-decoration: none;
-    color: $fluo-blue;
-    margin: auto 3vw;
-    position: relative;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease; 
+  font-size: 1.4rem;
+  font-weight: $medium-bold;
+  text-decoration: none;
+  color: $fluo-blue;
+  margin: auto 3vw;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
 
-    &:hover {
-        border-bottom: 2px solid $fluo-blue;
-    }
+  &:hover {
+    border-bottom: 2px solid $fluo-blue;
+  }
 }

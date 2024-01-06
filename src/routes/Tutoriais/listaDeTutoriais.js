@@ -1,20 +1,6 @@
 // listaDeCursos.js
 export const arrayTutoriais = [
-  {
-    topico: "JavaScript",
-    nivel: "Basico",
-    id: "objetos-em-javascript",
-    title: "Objetos em JavaScript",
-    topicosAbordados: [
-      "Introdução aos Objetos",
-      "Manipulação de Propriedades e Métodos",
-      "Objetos Aninhados",
-      "Prototipagem",
-      "Uso Prático em Projetos",
-    ],
-    instrutor: "Matheus Link",
-  },
-
+  
   {
     topico: "JavaScript",
     nivel: "Basico",
@@ -28,7 +14,21 @@ export const arrayTutoriais = [
     ],
     instrutor: "Matheus Link",
   },
-
+  {
+    topico: "JavaScript",
+    nivel: "Basico",
+    id: "objetos-em-javascript",
+    title: "Objetos em JavaScript",
+    topicosAbordados: [
+      "Introdução aos Objetos",
+      "Métodos",
+      "Objetos Aninhados",
+      "Prototipagem",
+      "Uso Prático em Projetos",
+    ],
+    instrutor: "Matheus Link",
+  },
+  
   {
     topico: "JavaScript",
     nivel: "Basico",
