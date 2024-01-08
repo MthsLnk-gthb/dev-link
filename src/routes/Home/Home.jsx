@@ -5,10 +5,12 @@ import AsideRedes from "../../Components/AsideRedes/AsideRedes";
 
 const Home = () => {
   return (
+    <>
+      <AsideRedes />
     <main className="home-page">
+      
       <h1 className="nome-pagina">Home</h1>
 
-      <AsideRedes />
 
       <article className="article-home">
         <TextosIntro />
@@ -25,6 +27,7 @@ const Home = () => {
       </article>
       {/* <Tutoriais/> */}
     </main>
+    </>
   );
 };
 

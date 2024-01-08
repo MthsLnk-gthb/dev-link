@@ -24,9 +24,7 @@ body {
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  //background-image: radial-gradient($violet 25%, $purple);
-  background-image: linear-gradient(to bottom, $dark-blue 50%, $fluo-blue);
-  background-repeat: repeat-y;
+  background-image: linear-gradient(to bottom, $dark-blue 40%, $fluo-blue);
 }
 
 .nome-pagina {
@@ -44,8 +42,29 @@ body {
   font-size: 1.1rem;
 }
 
-p{
+p {
   font-size: 1.25rem;
+}
+
+//Referente ao Componente Navbar.jsx
+
+.header-da-aplicacao {
+  margin-top: 2vh;
+}
+
+.link-da-navbar {
+  font-size: 1.4rem;
+  font-weight: $medium-bold;
+  text-decoration: none;
+  color: $fluo-blue;
+  margin: auto 3vw;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+
+  &:hover {
+    border-bottom: 2px solid $fluo-blue;
+  }
 }
 
 //Referente ao arquivo Home.jsx
@@ -62,9 +81,16 @@ p{
 
 .grid-redes-sociais {
   float: left;
-  display: grid;
-  position: absolute;
-  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  background-image: linear-gradient(to bottom, ($black 65%, $dark-blue));
+  border-right: 1px solid $blue;
+  width: 100px;
+  height: 100dvh;
+  top: 0;
+  left: 0;
 }
 
 .btn-rede-social {
@@ -80,8 +106,7 @@ p{
   height: 40px;
 
   &:hover {
-    filter: drop-shadow(0px 0px 4px $black);
-    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 5px $blue);
     transition: 0.5s;
     cursor: pointer;
   }
@@ -97,24 +122,21 @@ p{
   margin-top: 10dvh;
 }
 
-.textos-de-introducao > p:last-child {
-}
-
-.quem-sou{
+.quem-sou {
   margin-top: 10vh;
   text-align: center;
   width: 70vw;
 }
 
-.quem-sou>h1{
+.quem-sou > h1 {
   font-size: 1.6rem;
 }
 
-.quem-sou>p{
+.quem-sou > p {
   font-weight: $medium-bold;
 }
 
-.foto-matheus{
+.foto-matheus {
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -156,8 +178,8 @@ p{
 
 .lista-de-tutoriais {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 10vh auto;
 }
 
@@ -267,26 +289,62 @@ p{
   }
 }
 
-//Referente ao Componente Navbar.jsx
+@media (max-width: 767px) {
 
-.header-da-aplicacao {
-  margin-top: 2vh;
-}
-
-.barra-de-navegacao {
-}
-
-.link-da-navbar {
-  font-size: 1.4rem;
-  font-weight: $medium-bold;
-  text-decoration: none;
-  color: $fluo-blue;
-  margin: auto 3vw;
-  position: relative;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
-
-  &:hover {
-    border-bottom: 2px solid $fluo-blue;
+  .nome-pagina{
+     margin-top: 5dvh;
   }
+  //NavBar.jsx/
+
+  .link-da-navbar {
+    font-size: 1.3rem;
+    margin: auto 7vw;
+  }
+
+  //Home.jsx//
+
+  .textos-de-introducao {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .textos-de-introducao p {
+    margin-top: 5dvh;
+  }
+
+  .grid-redes-sociais {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 10dvh;
+    margin-top: 3dvh;
+  }
+
+  .btn-rede-social {
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 5dvw;
+  }
+
+  .img-rede-social {
+    width: 35px;
+    height: 35px;
+  }
+
+
+.quem-sou > h1 {
+  font-size: 1.5rem;
+}
+
+.foto-matheus {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 5vh;
+}
+
 }

@@ -28,8 +28,7 @@ const Cursos = () => {
 
   return (
     <>
-    
-      <Voltar rotaDestino="/home"/>
+      <Voltar rotaDestino="/"/>
       <h1 className="nome-pagina">Tutoriais DevLink</h1>
     <article className="tutoriais-page">
 
