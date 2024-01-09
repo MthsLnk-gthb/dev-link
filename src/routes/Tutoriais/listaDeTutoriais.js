@@ -1,6 +1,5 @@
 // listaDeCursos.js
 export const arrayTutoriais = [
-  
   {
     topico: "JavaScript",
     nivel: "Basico",
@@ -28,7 +27,7 @@ export const arrayTutoriais = [
     ],
     instrutor: "Matheus Link",
   },
-  
+
   {
     topico: "JavaScript",
     nivel: "Basico",
@@ -54,6 +53,34 @@ export const arrayTutoriais = [
       "Ramificações",
       "GitHub descomplicado",
       "Boas Práticas",
+    ],
+    instrutor: "Matheus Link",
+  },
+
+  {
+    topico: "Git e GitHub",
+    nivel: "Avançado",
+    id: "git-e-github-avancado",
+    title: "Git e GitHub - Avançado",
+    topicosAbordados: [
+      "Branching e Merging",
+      "Rebase",
+      "Workflow",
+      "Git Hooks",
+    ],
+    instrutor: "Matheus Link",
+  },
+  {
+    topico: "Python",
+    nivel: "Basico",
+    id: "introducao-python",
+    title: "Introdução ao Python",
+    topicosAbordados: [
+      "Sintaxe do Python",
+      "Tipos de Dados",
+      "Controle de Fluxo",
+      "Funções em Python",
+      "Modularidade",
     ],
     instrutor: "Matheus Link",
   },

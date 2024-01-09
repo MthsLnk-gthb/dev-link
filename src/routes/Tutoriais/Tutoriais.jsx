@@ -5,7 +5,7 @@ import Voltar from "../../Components/Voltar";
 
 const Cursos = () => {
   const [filtroTopico, setFiltroTopico] = useState("Todos");
-  const [filtroNivel, setFiltroNivel] = useState("Basico");
+  const [filtroNivel, setFiltroNivel] = useState("Todos");
 
   const handleFiltro = (e) => {
     const { name, value } = e.target;
@@ -23,7 +23,7 @@ const Cursos = () => {
       (filtroNivel === "Todos" || tutorial.nivel === filtroNivel)
   );
 
-  const topicos = ["Todos", "JavaScript", "HTML", "CSS", "Outros da Web", "Git e GitHub"];
+  const topicos = ["Todos", "JavaScript", "HTML", "CSS", "Python", "Outros da Web", "Git e GitHub"];
   const niveis = ["Todos", "Basico", "Intermediario", "Avançado"];
 
   return (

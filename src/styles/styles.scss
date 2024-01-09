@@ -123,7 +123,7 @@ p {
 }
 
 .quem-sou {
-  margin-top: 10vh;
+  margin: 10vh auto;
   text-align: center;
   width: 70vw;
 }
@@ -290,15 +290,19 @@ p {
 }
 
 @media (max-width: 767px) {
+  .link-de-retorno {
+    left: 3vw;
+    margin-top: 5dvh;
+  }
 
-  .nome-pagina{
-     margin-top: 5dvh;
+  .nome-pagina {
+    margin-top: 5dvh;
   }
   //NavBar.jsx/
 
   .link-da-navbar {
     font-size: 1.3rem;
-    margin: auto 7vw;
+    margin: auto 5vw;
   }
 
   //Home.jsx//
@@ -334,17 +338,15 @@ p {
     height: 35px;
   }
 
+  .quem-sou > h1 {
+    font-size: 1.5rem;
+  }
 
-.quem-sou > h1 {
-  font-size: 1.5rem;
-}
-
-.foto-matheus {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: 5vh;
-}
-
+  .foto-matheus {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5vh;
+  }
 }
