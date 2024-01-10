@@ -4,12 +4,12 @@ const AsideRedes = () => {
         {
           src: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
           alt: "Meu Instagram",
-          link: "",
+          link: "https://www.instagram.com/matheus._.link?igsh=cDV6bHcyNDgwcGd1",
         },
         {
           src: "https://cdn-icons-png.flaticon.com/256/174/174857.png",
-          alt: "Nosso Linkedin",
-          link: "",
+          alt: "Meu Linkedin",
+          link: "https://www.linkedin.com/in/matheus-link-21b3a4265/",
         },
         {
           src: "https://cdn-icons-png.flaticon.com/256/1384/1384060.png",
@@ -18,8 +18,8 @@ const AsideRedes = () => {
         },
         {
           src: "https://cdn-icons-png.flaticon.com/512/3046/3046126.png",
-          alt: "Nosso TikTok",
-          link: "",
+          alt: "Meu TikTok",
+          link: "https://www.tiktok.com/@mthslnk?_t=8ivOb3S8xRm&_r=1",
         },
       ];
 
