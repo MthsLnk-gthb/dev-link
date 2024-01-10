@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import DetalhesTutoriais from "./routes/Tutoriais/DetalhesTutoriais.jsx";
 import Home from "./routes/Home/Home.jsx";
+import Favoritos from "./routes/Favoritos/Favoritos.jsx";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/tutoriais",
         element: <Tutoriais />
+      },
+      {
+        path: "/favoritos",
+        element: <Favoritos/>
       },
       {
         path: "/tutoriais/:id/",

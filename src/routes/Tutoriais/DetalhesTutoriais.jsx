@@ -24,7 +24,7 @@ const DetalhesCursos = () => {
           <p className="instrutor-do-tutorial">
             Instrutor(a) do tutorial: <span>{tutorial.instrutor}</span>
           </p>
-          <button className="botao-de-matricula">Assistir</button>
+          <button className="botao-de-matricula">Em Breve...</button>
         </section>
       </article>
     </>
