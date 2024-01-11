@@ -1,20 +1,3 @@
-/*import Voltar from "../../Components/Voltar";
-
-const Favoritos = () => {
-  return (
-    <main>
-      <Voltar rotaDestino="/tutoriais" />
-      <h1>Favoritos</h1>
-    </main>
-  );
-};
-
-export default Favoritos;
-*/
-
-// Favoritos.jsx
-// Favoritos.jsx
-
 import { Link } from "react-router-dom";
 import Voltar from "../../Components/Voltar";
 import { useFavoritos } from "../../Context/FavoritosContext";
@@ -29,17 +12,22 @@ const Favoritos = () => {
   return (
     <main>
       <Voltar rotaDestino="/tutoriais" />
-      <h1>Favoritos</h1>
+      <h1 className="nome-pagina">Favoritos</h1>
+      <article className="lista-de-tutoriais">
       {favoritos.map((favorito) => (
-        <div key={favorito.id}>
+        <section className="caixa-tutorial" key={favorito.id}>
+          <h3>{favorito.title}</h3>
           <Link to={`/tutoriais/${favorito.id}`}>
-            {favorito.title}
+            <span>
+              Mais informações
+            </span>
           </Link>
-          <button onClick={() => handleRemoverFavorito(favorito.id)}>
+          <button onClick={() => handleRemoverFavorito(favorito.id)} className="botao-favoritar">
             Remover dos Favoritos
           </button>
-        </div>
+        </section>
       ))}
+      </article>
     </main>
   );
 };
