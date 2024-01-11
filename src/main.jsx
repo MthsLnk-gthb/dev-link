@@ -11,12 +11,17 @@ import App from "./App.jsx";
 import DetalhesTutoriais from "./routes/Tutoriais/DetalhesTutoriais.jsx";
 import Home from "./routes/Home/Home.jsx";
 import Favoritos from "./routes/Favoritos/Favoritos.jsx";
+import { FavoritosProvider } from './Context/FavoritosContext';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: 
+  <FavoritosProvider>
+    <App />
+  </FavoritosProvider> , 
     errorElement: <ErrorPage/>,
     children: [
       {
@@ -45,6 +50,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router}/>
   </React.StrictMode>
 );

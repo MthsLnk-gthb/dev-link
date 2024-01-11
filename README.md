@@ -13,9 +13,9 @@ Bem-vindo à DevLink, a sua comunidade dedicada ao universo fascinante do desenv
 ## Onde nos encontrar:
 
 - 🎥 [YouTube](https://www.youtube.com/channel/UCFv5LW1KHS6vvuHbHroda7Q)
-- 📸 [Instagram](link) - Perfil a ser Criado !!!  
-- 🔗 [LinkedIn](link) - Perfil a ser Criado !!! 
-- 🎵 [TikTok](link) - Perfil a ser Criado !!! 
+- 📸 [Instagram](https://www.instagram.com/matheus._.link?igsh=cDV6bHcyNDgwcGd1)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/matheus-link-21b3a4265/)
+- 🎵 [TikTok](https://www.tiktok.com/@mthslnk?_t=8ivOb3S8xRm&_r=1)
 
 ---
 

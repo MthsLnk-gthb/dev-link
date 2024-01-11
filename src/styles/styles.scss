@@ -150,6 +150,12 @@ p {
   margin-top: 10dvh;
 }
 
+.link-favoritos{
+  position: absolute;
+  right: 5vw;
+  color: $fluo-blue;
+}
+
 .filtros-tutoriais {
   margin-top: 3vh;
 }
@@ -295,9 +301,15 @@ p {
     margin-top: 5dvh;
   }
 
+   .link-favoritos{
+    right: 3vw;
+    margin-top: 5dvh;
+   }
+
   .nome-pagina {
     margin-top: 5dvh;
   }
+
   //NavBar.jsx/
 
   .link-da-navbar {

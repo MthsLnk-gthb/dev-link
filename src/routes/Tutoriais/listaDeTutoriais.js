@@ -1,4 +1,4 @@
-// listaDeCursos.js
+// listaDeTutoriais.js
 export const arrayTutoriais = [
   {
     topico: "JavaScript",
