@@ -1,16 +1,4 @@
-$black: #1b1b1b;
-$white-font: #dfdfe2;
-$pink: #ef2d56;
-$light-purple: #961ff1;
-$violet: #50028f;
-$purple: #250141;
-$blue: #2c8ac4;
-$dark-blue: #00325a;
-$fluo-blue: #00c8e2;
-
-$bold: 700;
-$medium-bold: 500;
-$light: 200;
+@import "./variaveis.scss";
 
 * {
   margin: 0;
@@ -79,38 +67,6 @@ p {
   place-items: center;
 }
 
-.grid-redes-sociais {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  background-image: linear-gradient(to bottom, ($black 65%, $dark-blue));
-  border-right: 1px solid $blue;
-  width: 100px;
-  height: 100dvh;
-  top: 0;
-  left: 0;
-}
-
-.btn-rede-social {
-  align-items: center;
-  justify-content: center;
-  margin: 3vh auto;
-  background-color: transparent;
-  border: none;
-}
-
-.img-rede-social {
-  width: 40px;
-  height: 40px;
-
-  &:hover {
-    filter: drop-shadow(0px 0px 5px $blue);
-    transition: 0.5s;
-    cursor: pointer;
-  }
-}
 
 .textos-de-introducao {
   width: 65vw;
