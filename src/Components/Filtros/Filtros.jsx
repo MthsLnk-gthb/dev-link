@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './style.scss'
 
 const Filtros = ({handleFiltro, filtroTopico, topicos, filtroNivel, niveis}) => {
   return (

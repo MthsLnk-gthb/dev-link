@@ -2,6 +2,7 @@ import { textoMatheusLink } from "./textosHome";
 import minhaFoto from "/imgs/minha-foto.webp";
 import TextosIntro from "../../Components/TextosIntroducao/TextosIntro";
 import AsideRedes from "../../Components/AsideRedes/AsideRedes";
+import './style.scss'
 
 const Home = () => {
   return (

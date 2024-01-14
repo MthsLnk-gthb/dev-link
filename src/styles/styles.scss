@@ -19,88 +19,47 @@ body {
   color: $white-font;
   text-decoration: underline;
   font-size: 1.8rem;
-  margin-top: 5vh;
+  margin-top: 5dvh;
 }
 
 .link-de-retorno {
   position: absolute;
-  left: 5vw;
+  left: 10dvw;
   color: $pink;
   text-decoration: underline;
   font-size: 1.1rem;
 }
 
+.link-favoritos{
+  position: absolute;
+  right: 10dvw;
+  color: $fluo-blue;
+}
+
+
 p {
   font-size: 1.25rem;
 }
 
-//Referente ao Componente Navbar.jsx
-
-.header-da-aplicacao {
-  margin-top: 2vh;
+.error-page{
+  display: grid;
+  place-items: center
 }
 
-.link-da-navbar {
-  font-size: 1.4rem;
-  font-weight: $medium-bold;
-  text-decoration: none;
-  color: $fluo-blue;
-  margin: auto 3vw;
-  position: relative;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
-
-  &:hover {
-    border-bottom: 2px solid $fluo-blue;
-  }
-}
-
-//Referente ao arquivo Home.jsx
-
-.home-page {
-  justify-content: center;
-  align-items: center;
-}
-
-.article-home {
+.error-box{
+  width: 50dvw;
+  height: 30dvh;
+  margin: 30dvh auto;
+  background-color: $dark-blue;
+  border-radius: 15px;
   display: grid;
   place-items: center;
+  box-shadow: 0 3px 30px 2px $pink;
 }
 
-
-.textos-de-introducao {
-  width: 65vw;
-  text-align: justify;
-}
-
-.textos-de-introducao p {
-  color: $white-font;
-  margin-top: 10dvh;
-}
-
-.quem-sou {
-  margin: 10vh auto;
-  text-align: center;
-  width: 70vw;
-}
-
-.quem-sou > h1 {
-  color: $white-font;
-  text-decoration: underline;
-  font-size: 1.7rem;
-  margin-top: 5vh;
-}
-
-.quem-sou > p {
-  font-weight: $medium-bold;
-}
-
-.foto-matheus {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: 5vh;
+.error-box>h1{
+  color: $pink;
+  font-size: 2.2rem;
 }
 
 //Referentes ao Tutoriais.jsx
@@ -109,98 +68,6 @@ p {
   margin-top: 10dvh;
 }
 
-.link-favoritos{
-  position: absolute;
-  right: 5vw;
-  color: $fluo-blue;
-}
-
-.filtros-tutoriais {
-  margin-top: 3vh;
-}
-
-.filtros-tutoriais > h2 {
-  color: $light-purple;
-}
-
-.select-filtros {
-  margin: 2vh 3vw;
-  width: 200px;
-  height: 40px;
-  background-color: $light-purple;
-  font-size: 1.3rem;
-  font-weight: $bold;
-  color: $white-font;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  z-index: 1;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.lista-de-tutoriais {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10vh auto;
-}
- 
-.caixa-tutorial {
-  display: grid;
-  position: relative;
-  width: 300px;
-  height: 150px;
-  background-color: $dark-blue;
-  border: 2px solid $blue;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s linear;
-
-  &:hover {
-    border: 2px solid $fluo-blue;
-  }
-}
-
-.caixa-tutorial h3{
-  color: $white-font;
-  font-size: 1.5rem;
-}
-
-.caixa-tutorial span {
-  font-size: 1.1rem;
-  color: $fluo-blue;
-  text-decoration: underline;
-}
-
-.botao-favoritar{
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  width: 100%;
-  height: 5dvh;
-  border-radius: 0 0 5px 5px;
-  border: none;
-  background-color: $white-font;
-
-  font-size: 1.2rem;
-  font-weight: $bold;
-
-  transition: ease-in;
-
-  &:hover {
-    cursor: pointer;
-    background-color: $black;
-    color: $white-font;
-    transition: 0.5s;
-  }
-  &:not(:hover) {
-    transition: 0.5s;
-  }
-}
 
 .nenhum-tutorial-encontrado {
   width: 350px;
@@ -216,14 +83,13 @@ p {
   color: $white-font;
 }
 
-//Referente ao arquivo DetalhesCursos.jsx
+//Referente ao arquivo DetalhesTutoriais.jsx
 
 .box-do-tutorial {
   position: relative;
-  margin: 15vh auto;
-  width: 30vw;
-  min-width: 300px;
-  height: 55vh;
+  margin: 15dvh auto;
+  max-width: 70dvw;
+  height: 55dvh;
   background-color: $blue;
   overflow: hidden;
   border-radius: 10px;
@@ -231,7 +97,7 @@ p {
 
 .box-do-tutorial > h1 {
   font-size: 1.6rem;
-  margin: 1vh auto;
+  margin: 1dvh auto;
   color: $white-font;
 }
 
@@ -240,7 +106,7 @@ p {
 }
 
 .lista-de-topicos {
-  margin: 4vh auto;
+  margin: 4dvh auto;
   text-align: justify;
   display: grid;
   justify-content: center;
@@ -249,11 +115,11 @@ p {
 }
 
 .instrutor-do-tutorial {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: underline;
-  color: $white-font;
+  color: $nome;
   position: absolute;
-  bottom: 11vh;
+  bottom: 11dvh;
   margin: 0 auto;
   left: 1%;
   right: 1%;
@@ -265,7 +131,7 @@ p {
   margin: 0;
   bottom: 0;
   width: 100%;
-  height: 10vh;
+  height: 10dvh;
   background-color: $dark-blue;
   color: $white-font;
   border: none;
@@ -283,70 +149,19 @@ p {
   }
 }
 
+
 @media (max-width: 767px) {
   .link-de-retorno {
-    left: 3vw;
+    left: 3dvw;
     margin-top: 5dvh;
   }
 
    .link-favoritos{
-    right: 3vw;
+    right: 3dvw;
     margin-top: 5dvh;
    }
 
   .nome-pagina {
     margin-top: 5dvh;
-  }
-
-  //NavBar.jsx/
-
-  .link-da-navbar {
-    font-size: 1.3rem;
-    margin: auto 5vw;
-  }
-
-  //Home.jsx//
-
-  .textos-de-introducao {
-    width: 80vw;
-    text-align: center;
-  }
-
-  .textos-de-introducao p {
-    margin-top: 5dvh;
-  }
-
-  .grid-redes-sociais {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    background: transparent;
-    border: none;
-    width: 100%;
-    height: 10dvh;
-    margin-top: 3dvh;
-  }
-
-  .btn-rede-social {
-    align-items: center;
-    justify-content: center;
-    margin: 3vh 5dvw;
-  }
-
-  .img-rede-social {
-    width: 35px;
-    height: 35px;
-  }
-
-  .quem-sou > h1 {
-    font-size: 1.5rem;
-  }
-
-  .foto-matheus {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 5vh;
   }
 }

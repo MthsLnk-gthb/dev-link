@@ -1,7 +1,11 @@
 export const ErrorPage = () => {
   return (
-    <article>
-        <h1>Erro na aplicação</h1>
-    </article>
-  )
-}
+    <>
+      <article className="error-page">
+        <section className="error-box">
+          <h1>Erro na aplicação</h1>
+        </section>
+      </article>
+    </>
+  );
+};

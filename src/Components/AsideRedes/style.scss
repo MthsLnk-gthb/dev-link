@@ -1,4 +1,4 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
 .grid-redes-sociais {
   float: left;
@@ -30,5 +30,29 @@
     filter: drop-shadow(0px 0px 5px $blue);
     transition: 0.5s;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-redes-sociais {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 10dvh;
+    margin-top: 3dvh;
+  }
+
+  .btn-rede-social {
+    align-items: center;
+    justify-content: center;
+    margin: 3dvh 5dvw;
+  }
+
+  .img-rede-social {
+    width: 35px;
+    height: 35px;
   }
 }

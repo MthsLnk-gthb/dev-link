@@ -7,11 +7,17 @@ export const FavoritosProvider = ({ children }) => {
   const [favoritos, setFavoritos] = useState([]);
 
   const adicionarFavorito = (tutorial) => {
-    setFavoritos((prevFavoritos) => {
-      const novosFavoritos = [...prevFavoritos, tutorial];
-      localStorage.setItem("favoritos", JSON.stringify(novosFavoritos));
-      return novosFavoritos;
-    });
+   const jaNoFavoritos = favoritos.some((fav) => fav.id === tutorial.id);
+
+   if (!jaNoFavoritos) {
+     setFavoritos((prevFavoritos) => {
+       const novosFavoritos = [...prevFavoritos, tutorial];
+       localStorage.setItem("favoritos", JSON.stringify(novosFavoritos));
+       return novosFavoritos;
+     });
+   } else {
+     alert("Este tutorial já está nos favoritos!");
+   }
   };
 
   const removerFavorito = (tutorialId) => {

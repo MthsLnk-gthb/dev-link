@@ -1,0 +1,11 @@
+@import '../../styles/variaveis.scss';
+
+.textos-de-introducao {
+  width: 65vw;
+  text-align: justify;
+}
+
+.textos-de-introducao p {
+  color: $white-font;
+  margin-top: 10dvh;
+}

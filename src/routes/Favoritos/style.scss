@@ -1,0 +1,62 @@
+@import '../../styles/variaveis.scss';
+
+.lista-de-tutoriais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10vh auto;
+}
+ 
+.caixa-tutorial {
+  display: grid;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background-color: $dark-blue;
+  border: 2px solid $blue;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s linear;
+
+  &:hover {
+    border: 2px solid $fluo-blue;
+  }
+}
+
+.caixa-tutorial h3{
+  color: $white-font;
+  font-size: 1.5rem;
+}
+
+.caixa-tutorial span {
+  font-size: 1.1rem;
+  color: $fluo-blue;
+  text-decoration: underline;
+}
+
+.botao-favoritar{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 5dvh;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  background-color: $white-font;
+
+  font-size: 1.2rem;
+  font-weight: $bold;
+
+  transition: ease-in;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $black;
+    color: $white-font;
+    transition: 0.5s;
+  }
+  &:not(:hover) {
+    transition: 0.5s;
+  }
+}

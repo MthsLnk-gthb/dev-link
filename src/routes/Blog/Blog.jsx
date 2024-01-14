@@ -1,12 +1,14 @@
 const Blog = () => {
   return (
-    <article className="blog-page">
+    <>
+      <article className="blog-page">
         <h1 className="nome-pagina">Blog DevLink</h1>
         <section>
-          <h2>O blog está vazio...</h2>
+          <h2>Em Breve...</h2>
         </section>
-    </article>
-  )
+      </article>
+    </>
+  );
 };
 
 export default Blog;

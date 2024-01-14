@@ -1,0 +1,27 @@
+@import "../../styles/variaveis.scss";
+
+.header-da-aplicacao {
+  margin-top: 2vh;
+}
+
+.link-da-navbar {
+  font-size: 1.4rem;
+  font-weight: $medium-bold;
+  text-decoration: none;
+  color: $fluo-blue;
+  margin: auto 3vw;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+
+  &:hover {
+    border-bottom: 2px solid $fluo-blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-da-navbar {
+    font-size: 1.3rem;
+    margin: auto 5dvw;
+  }
+}

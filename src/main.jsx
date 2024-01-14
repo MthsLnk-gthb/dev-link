@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 
 import Tutoriais from './routes/Tutoriais/Tutoriais.jsx'
 import Blog from "./routes/Blog/Blog.jsx";
@@ -26,7 +25,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Home />
+      },
+      {
+        path: "*",
+        element: <Home/>
       },
       {
         path: "/tutoriais",
@@ -42,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: <Blog />
       }
     ]
   }

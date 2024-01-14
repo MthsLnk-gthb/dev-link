@@ -1,0 +1,61 @@
+@import "../../styles/variaveis.scss";
+
+.home-page {
+  justify-content: center;
+  align-items: center;
+}
+
+.article-home {
+  display: grid;
+  place-items: center;
+}
+
+.quem-sou {
+  margin: 10dvh auto;
+  text-align: center;
+  width: 70dvw;
+}
+
+.quem-sou > h1 {
+  color: $white-font;
+  text-decoration: underline;
+  font-size: 1.7rem;
+  margin-top: 5vh;
+}
+
+.quem-sou > p {
+  font-weight: $medium-bold;
+  color: $white-font;
+  margin-top: 2dvh;
+}
+
+.foto-matheus {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 5dvh;
+}
+
+@media (max-width: 767px) {
+  .textos-de-introducao {
+    width: 80dvw;
+    text-align: center;
+  }
+
+  .textos-de-introducao p {
+    margin-top: 5dvh;
+  }
+
+  .quem-sou > h1 {
+    font-size: 1.5rem;
+  }
+
+  .foto-matheus {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5dvh;
+  }
+}

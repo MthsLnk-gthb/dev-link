@@ -1,5 +1,5 @@
 import { textoDois, textoInicial } from "../../routes/Home/textosHome";
-
+import './style.scss'
 
 const TextosIntro = () => {
   return (

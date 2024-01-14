@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "./styles/styles.scss";
-import Navbar from "./Components/NavBar/Navbar";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <>
       <main>
-        <Navbar/>
+        <Header/>
         <Outlet />
       </main>
     </>
