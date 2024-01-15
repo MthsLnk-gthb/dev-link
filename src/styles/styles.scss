@@ -149,6 +149,14 @@ p {
   }
 }
 
+.blog-box{
+  margin-top: 10dvh;
+}
+
+.blog-box>h2{
+  color: $white-font;
+}
+
 
 @media (max-width: 767px) {
   .link-de-retorno {
