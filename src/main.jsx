@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import Tutoriais from './routes/Tutoriais/Tutoriais.jsx'
-import Blog from "./routes/Blog/Blog.jsx";
 import { ErrorPage } from "./routes/ErrorPage/ErrorPage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -11,6 +10,7 @@ import DetalhesTutoriais from "./routes/Tutoriais/DetalhesTutoriais.jsx";
 import Home from "./routes/Home/Home.jsx";
 import Favoritos from "./routes/Favoritos/Favoritos.jsx";
 import { FavoritosProvider } from './Context/FavoritosContext';
+import SobreMim from "./routes/SobreMim/SobreMim.jsx";
 
 
 
@@ -44,8 +44,8 @@ const router = createBrowserRouter([
         element: <DetalhesTutoriais/>
       },
       {
-        path: "/blog",
-        element: <Blog />
+        path: "/sobremim",
+        element: <SobreMim />
       }
     ]
   }
