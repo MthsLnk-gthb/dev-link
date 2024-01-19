@@ -11,7 +11,8 @@ body {
   display: grid;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 100dvh;
+  min-width: 100%;
   background-image: linear-gradient(to bottom, $black, $purple);
 }
 
@@ -88,7 +89,8 @@ p {
 .box-do-tutorial {
   position: relative;
   margin: 15dvh auto;
-  max-width: 70dvw;
+  width: 400px;
+  max-width: 85dvw;
   height: 55dvh;
   background-color: $blue;
   overflow: hidden;
