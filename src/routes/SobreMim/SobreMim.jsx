@@ -6,8 +6,8 @@ import Voltar from "../../Components/Voltar";
 const SobreMim = () => {
   return (
     <>
-      <Voltar rotaDestino="/blog" />
-      <article className="blog-page">
+      <Voltar rotaDestino="/home" />
+      <article className="sobre-mim">
         <h1 className="nome-pagina">Sobre Mim</h1>
         <section className="quem-sou">
           <h1>Quem é Matheus Link?</h1>
