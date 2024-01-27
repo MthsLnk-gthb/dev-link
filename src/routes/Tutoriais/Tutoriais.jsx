@@ -65,9 +65,7 @@ const Tutoriais = () => {
               <section className="caixa-tutorial" key={tutorial.id}>
                 <h3>{tutorial.title}</h3>
                 <Link to={`/tutoriais/${tutorial.id}`} key={tutorial.id}>
-                  <span>
-                    Clique para mais informações
-                  </span>
+                  <span>Clique para mais informações</span>
                 </Link>
                 <button
                   onClick={(e) => {
@@ -75,9 +73,19 @@ const Tutoriais = () => {
                     adicionarFavorito(tutorial);
                     salvarFavoritosNoLocalStorage();
                   }}
-                  className="botao-favoritar"
+                  className={`botao-favoritar ${
+                    favoritos.some(
+                      (favTutorial) => favTutorial.id === tutorial.id
+                    )
+                      ? "favoritado"
+                      : ""
+                  }`}
                 >
-                  Favoritar
+                  {favoritos.some(
+                    (favTutorial) => favTutorial.id === tutorial.id
+                  )
+                    ? "Favoritado"
+                    : "Favoritar"}
                 </button>
               </section>
             ))
