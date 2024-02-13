@@ -6,7 +6,7 @@ import Voltar from "../../Components/Voltar";
 const SobreMim = () => {
   return (
     <>
-      <Voltar rotaDestino="/home" />
+      <Voltar rotaDestino="/dev-link/home" />
       <article className="sobre-mim">
         <h1 className="nome-pagina">Sobre Mim</h1>
         <section className="quem-sou">

@@ -12,7 +12,7 @@ const Favoritos = () => {
 
   return (
     <>
-      <Voltar rotaDestino="/tutoriais" />
+      <Voltar rotaDestino="/dev-link/tutoriais" />
       <h1 className="nome-pagina">Favoritos</h1>
       <article className="lista-de-tutoriais">
         {favoritos.map((favorito) => (

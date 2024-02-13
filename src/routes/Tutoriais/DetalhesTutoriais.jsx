@@ -8,7 +8,7 @@ const DetalhesCursos = () => {
 
   return (
     <>
-      <Voltar rotaDestino="/tutoriais" />
+      <Voltar rotaDestino="/dev-link/tutoriais" />
 
       <article className="article-detalhes">
         <section className="box-do-tutorial">

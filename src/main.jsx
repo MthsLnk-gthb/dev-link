@@ -17,38 +17,39 @@ import SobreMim from "./routes/SobreMim/SobreMim.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: 
-  <FavoritosProvider>
-    <App />
-  </FavoritosProvider> , 
-    errorElement: <ErrorPage/>,
+    element: (
+      <FavoritosProvider>
+        <App />
+      </FavoritosProvider>
+    ),
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
-        element: <Home />
+        path: "/dev-link/",
+        element: <Home />,
       },
       {
         path: "*",
-        element: <Home/>
+        element: <Home />,
       },
       {
-        path: "/tutoriais",
-        element: <Tutoriais />
+        path: "/dev-link/tutoriais",
+        element: <Tutoriais />,
       },
       {
-        path: "/favoritos",
-        element: <Favoritos/>
+        path: "/dev-link/favoritos",
+        element: <Favoritos />,
       },
       {
-        path: "/tutoriais/:id/",
-        element: <DetalhesTutoriais/>
+        path: "/dev-link/tutoriais/:id/",
+        element: <DetalhesTutoriais />,
       },
       {
-        path: "/sobremim",
-        element: <SobreMim />
-      }
-    ]
-  }
+        path: "/dev-link/sobremim",
+        element: <SobreMim />,
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

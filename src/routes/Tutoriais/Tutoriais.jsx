@@ -44,8 +44,12 @@ const Tutoriais = () => {
 
   return (
     <>
-      <Voltar rotaDestino="/" />
-      <Link to={"/favoritos"} favoritos={favoritos} className="link-favoritos">
+      <Voltar rotaDestino="/dev-link/home" />
+      <Link
+        to={"/dev-link/favoritos"}
+        favoritos={favoritos}
+        className="link-favoritos"
+      >
         Favoritos
       </Link>
 
@@ -64,7 +68,10 @@ const Tutoriais = () => {
             tutoriaisFiltrados.map((tutorial) => (
               <section className="caixa-tutorial" key={tutorial.id}>
                 <h3>{tutorial.title}</h3>
-                <Link to={`/tutoriais/${tutorial.id}`} key={tutorial.id}>
+                <Link
+                  to={`/dev-link/tutoriais/${tutorial.id}`}
+                  key={tutorial.id}
+                >
                   <span>Clique para mais informações</span>
                 </Link>
                 <button
